@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6575181A3E82A400013FA4 /* CaculFontSize.m */; };
 		CEEC7D3E1A3C271B00BBAE92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D3D1A3C271B00BBAE92 /* main.m */; };
 		CEEC7D411A3C271B00BBAE92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D401A3C271B00BBAE92 /* AppDelegate.m */; };
 		CEEC7D441A3C271B00BBAE92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D431A3C271B00BBAE92 /* ViewController.m */; };
@@ -49,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE6575171A3E82A400013FA4 /* CaculFontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaculFontSize.h; sourceTree = "<group>"; };
+		CE6575181A3E82A400013FA4 /* CaculFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaculFontSize.m; sourceTree = "<group>"; };
 		CEEC7D381A3C271B00BBAE92 /* MyLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEEC7D3C1A3C271B00BBAE92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEEC7D3D1A3C271B00BBAE92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -200,6 +203,8 @@
 				CEEC7D481A3C271B00BBAE92 /* Images.xcassets */,
 				CEEC7D4A1A3C271B00BBAE92 /* LaunchScreen.xib */,
 				CEEC7D3B1A3C271B00BBAE92 /* Supporting Files */,
+				CE6575171A3E82A400013FA4 /* CaculFontSize.h */,
+				CE6575181A3E82A400013FA4 /* CaculFontSize.m */,
 			);
 			path = MyLibrary;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				CEEC7D961A3C275400BBAE92 /* FullBgView.m in Sources */,
 				CEEC7DA21A3C275400BBAE92 /* UIImage+capture.m in Sources */,
 				CEEC7D9B1A3C275400BBAE92 /* NSString+Hash.m in Sources */,
+				CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */,
 				CEEC7DA01A3C275400BBAE92 /* Reachability.m in Sources */,
 				CEEC7DA11A3C275400BBAE92 /* TextView.m in Sources */,
 				CEEC7D9C1A3C275400BBAE92 /* NSString+Password.m in Sources */,
@@ -570,6 +576,7 @@
 				CEEC7D5D1A3C271B00BBAE92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CEEC7D5E1A3C271B00BBAE92 /* Build configuration list for PBXNativeTarget "MyLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -578,6 +585,7 @@
 				CEEC7D601A3C271B00BBAE92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
