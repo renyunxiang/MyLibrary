@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5447141A3FDFF8006272AD /* NSDate+Extension.m */; };
 		CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6575181A3E82A400013FA4 /* CaculFontSize.m */; };
 		CEEC7D3E1A3C271B00BBAE92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D3D1A3C271B00BBAE92 /* main.m */; };
 		CEEC7D411A3C271B00BBAE92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D401A3C271B00BBAE92 /* AppDelegate.m */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE5447131A3FDFF8006272AD /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		CE5447141A3FDFF8006272AD /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		CE6575171A3E82A400013FA4 /* CaculFontSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaculFontSize.h; sourceTree = "<group>"; };
 		CE6575181A3E82A400013FA4 /* CaculFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaculFontSize.m; sourceTree = "<group>"; };
 		CEEC7D381A3C271B00BBAE92 /* MyLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +208,8 @@
 				CEEC7D3B1A3C271B00BBAE92 /* Supporting Files */,
 				CE6575171A3E82A400013FA4 /* CaculFontSize.h */,
 				CE6575181A3E82A400013FA4 /* CaculFontSize.m */,
+				CE5447131A3FDFF8006272AD /* NSDate+Extension.h */,
+				CE5447141A3FDFF8006272AD /* NSDate+Extension.m */,
 			);
 			path = MyLibrary;
 			sourceTree = "<group>";
@@ -385,6 +390,7 @@
 				CEEC7DA31A3C275400BBAE92 /* UIImage+Clipe.m in Sources */,
 				CEEC7D9A1A3C275400BBAE92 /* NSString+Extension.m in Sources */,
 				CEEC7DA81A3C275400BBAE92 /* UIView+frame.m in Sources */,
+				CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */,
 				CEEC7D991A3C275400BBAE92 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
