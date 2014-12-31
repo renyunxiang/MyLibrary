@@ -43,6 +43,7 @@
 		CEEC7DA81A3C275400BBAE92 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D911A3C275400BBAE92 /* UIView+frame.m */; };
 		CEEC7DA91A3C275400BBAE92 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D931A3C275400BBAE92 /* UIView+Image.m */; };
 		CEF5F20B1A5392B400356F2C /* CellAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5F20A1A5392B400356F2C /* CellAnimation.m */; };
+		CEF5F20F1A539B8000356F2C /* MyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5F20E1A539B8000356F2C /* MyLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		CEEC7D931A3C275400BBAE92 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
 		CEF5F20A1A5392B400356F2C /* CellAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellAnimation.m; sourceTree = "<group>"; };
 		CEF5F20C1A5392E100356F2C /* CellAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellAnimation.h; sourceTree = "<group>"; };
+		CEF5F20D1A539B8000356F2C /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayout.h; sourceTree = "<group>"; };
+		CEF5F20E1A539B8000356F2C /* MyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +254,8 @@
 				CE6575181A3E82A400013FA4 /* CaculFontSize.m */,
 				CE5447131A3FDFF8006272AD /* NSDate+Extension.h */,
 				CE5447141A3FDFF8006272AD /* NSDate+Extension.m */,
+				CEF5F20D1A539B8000356F2C /* MyLayout.h */,
+				CEF5F20E1A539B8000356F2C /* MyLayout.m */,
 			);
 			path = MyLibrary;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				CEEC7D9B1A3C275400BBAE92 /* NSString+Hash.m in Sources */,
 				CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */,
 				CEEC7DA01A3C275400BBAE92 /* Reachability.m in Sources */,
+				CEF5F20F1A539B8000356F2C /* MyLayout.m in Sources */,
 				CEEC7DA11A3C275400BBAE92 /* TextView.m in Sources */,
 				CEE426B01A442D0B0066DA35 /* NSString+Emoji.m in Sources */,
 				CEEC7D9C1A3C275400BBAE92 /* NSString+Password.m in Sources */,
