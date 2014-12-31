@@ -42,6 +42,7 @@
 		CEEC7DA71A3C275400BBAE92 /* UIImage+WaterImage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D8F1A3C275400BBAE92 /* UIImage+WaterImage.m */; };
 		CEEC7DA81A3C275400BBAE92 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D911A3C275400BBAE92 /* UIView+frame.m */; };
 		CEEC7DA91A3C275400BBAE92 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D931A3C275400BBAE92 /* UIView+Image.m */; };
+		CEF5F20B1A5392B400356F2C /* CellAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5F20A1A5392B400356F2C /* CellAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		CEEC7D911A3C275400BBAE92 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		CEEC7D921A3C275400BBAE92 /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
 		CEEC7D931A3C275400BBAE92 /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+		CEF5F20A1A5392B400356F2C /* CellAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellAnimation.m; sourceTree = "<group>"; };
+		CEF5F20C1A5392E100356F2C /* CellAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellAnimation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +194,8 @@
 			children = (
 				CE61A5FD1A47F14F00355FE1 /* Regex */,
 				CEE426AE1A442D0B0066DA35 /* NSString+Emoji.h */,
+				CEF5F20C1A5392E100356F2C /* CellAnimation.h */,
+				CEF5F20A1A5392B400356F2C /* CellAnimation.m */,
 				CEE426AF1A442D0B0066DA35 /* NSString+Emoji.m */,
 				CEEC7D611A3C275400BBAE92 /* AudioTool.h */,
 				CEEC7D621A3C275400BBAE92 /* AudioTool.m */,
@@ -418,6 +423,7 @@
 				CEEC7D941A3C275400BBAE92 /* AudioTool.m in Sources */,
 				CEEC7D971A3C275400BBAE92 /* MBProgressHUD+JY.m in Sources */,
 				CEEC7DA41A3C275400BBAE92 /* UIImage+Color.m in Sources */,
+				CEF5F20B1A5392B400356F2C /* CellAnimation.m in Sources */,
 				CEEC7D9E1A3C275400BBAE92 /* JYNetworkTest.m in Sources */,
 				CEEC7D9F1A3C275400BBAE92 /* JYNetworkTool.m in Sources */,
 				CEEC7D3E1A3C271B00BBAE92 /* main.m in Sources */,
