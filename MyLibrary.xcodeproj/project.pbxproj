@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0872FD1A723811008D03FF /* MyAnimationTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0872F81A723811008D03FF /* MyAnimationTransitioning.m */; };
+		CE0872FE1A723811008D03FF /* MypresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0872FA1A723811008D03FF /* MypresentationController.m */; };
+		CE0872FF1A723811008D03FF /* MyTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0872FC1A723811008D03FF /* MyTransition.m */; };
+		CE0873021A72384D008D03FF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0873011A72384D008D03FF /* TestViewController.m */; };
 		CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5447141A3FDFF8006272AD /* NSDate+Extension.m */; };
 		CE61A6031A47F19600355FE1 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A5FF1A47F19600355FE1 /* NSString+Extension.m */; };
 		CE61A6041A47F19600355FE1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A6021A47F19600355FE1 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -57,6 +61,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE0872F71A723811008D03FF /* MyAnimationTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAnimationTransitioning.h; sourceTree = "<group>"; };
+		CE0872F81A723811008D03FF /* MyAnimationTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAnimationTransitioning.m; sourceTree = "<group>"; };
+		CE0872F91A723811008D03FF /* MypresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MypresentationController.h; sourceTree = "<group>"; };
+		CE0872FA1A723811008D03FF /* MypresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MypresentationController.m; sourceTree = "<group>"; };
+		CE0872FB1A723811008D03FF /* MyTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTransition.h; sourceTree = "<group>"; };
+		CE0872FC1A723811008D03FF /* MyTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTransition.m; sourceTree = "<group>"; };
+		CE0873001A72384D008D03FF /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		CE0873011A72384D008D03FF /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		CE5447131A3FDFF8006272AD /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		CE5447141A3FDFF8006272AD /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		CE61A5FE1A47F19600355FE1 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
@@ -155,6 +167,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE0872F61A723811008D03FF /* ModalWithAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CE0872F71A723811008D03FF /* MyAnimationTransitioning.h */,
+				CE0872F81A723811008D03FF /* MyAnimationTransitioning.m */,
+				CE0872F91A723811008D03FF /* MypresentationController.h */,
+				CE0872FA1A723811008D03FF /* MypresentationController.m */,
+				CE0872FB1A723811008D03FF /* MyTransition.h */,
+				CE0872FC1A723811008D03FF /* MyTransition.m */,
+				CE0873001A72384D008D03FF /* TestViewController.h */,
+				CE0873011A72384D008D03FF /* TestViewController.m */,
+			);
+			path = ModalWithAnimation;
+			sourceTree = "<group>";
+		};
 		CE61A5FD1A47F14F00355FE1 /* Regex */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +222,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CE0872F61A723811008D03FF /* ModalWithAnimation */,
 				CE61A5FD1A47F14F00355FE1 /* Regex */,
 				CEE426AE1A442D0B0066DA35 /* NSString+Emoji.h */,
 				CEF5F20C1A5392E100356F2C /* CellAnimation.h */,
@@ -418,6 +446,7 @@
 				CEEC7D411A3C271B00BBAE92 /* AppDelegate.m in Sources */,
 				CEEC7D961A3C275400BBAE92 /* FullBgView.m in Sources */,
 				CEEC7DA21A3C275400BBAE92 /* UIImage+capture.m in Sources */,
+				CE0873021A72384D008D03FF /* TestViewController.m in Sources */,
 				CEEC7D9B1A3C275400BBAE92 /* NSString+Hash.m in Sources */,
 				CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */,
 				CEEC7DA01A3C275400BBAE92 /* Reachability.m in Sources */,
@@ -431,10 +460,12 @@
 				CEEC7DA41A3C275400BBAE92 /* UIImage+Color.m in Sources */,
 				CEF5F20B1A5392B400356F2C /* CellAnimation.m in Sources */,
 				CEEC7D9E1A3C275400BBAE92 /* JYNetworkTest.m in Sources */,
+				CE0872FF1A723811008D03FF /* MyTransition.m in Sources */,
 				CEEC7D9F1A3C275400BBAE92 /* JYNetworkTool.m in Sources */,
 				CEEC7D3E1A3C271B00BBAE92 /* main.m in Sources */,
 				CEEC7DA91A3C275400BBAE92 /* UIView+Image.m in Sources */,
 				CE77AC331A51446A00963CA0 /* GUIDTool.m in Sources */,
+				CE0872FE1A723811008D03FF /* MypresentationController.m in Sources */,
 				CEEC7DA51A3C275400BBAE92 /* UIImage+Extension.m in Sources */,
 				CEEC7DA71A3C275400BBAE92 /* UIImage+WaterImage.m in Sources */,
 				CEEC7D951A3C275400BBAE92 /* DAOTool.m in Sources */,
@@ -442,6 +473,7 @@
 				CEEC7D9A1A3C275400BBAE92 /* NSString+Extension.m in Sources */,
 				CEEC7DA81A3C275400BBAE92 /* UIView+frame.m in Sources */,
 				CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */,
+				CE0872FD1A723811008D03FF /* MyAnimationTransitioning.m in Sources */,
 				CEEC7D991A3C275400BBAE92 /* MBProgressHUD.m in Sources */,
 				CE61A6031A47F19600355FE1 /* NSString+Extension.m in Sources */,
 			);
