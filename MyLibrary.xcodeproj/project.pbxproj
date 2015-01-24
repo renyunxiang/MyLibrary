@@ -11,6 +11,7 @@
 		CE0872FE1A723811008D03FF /* MypresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0872FA1A723811008D03FF /* MypresentationController.m */; };
 		CE0872FF1A723811008D03FF /* MyTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0872FC1A723811008D03FF /* MyTransition.m */; };
 		CE0873021A72384D008D03FF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0873011A72384D008D03FF /* TestViewController.m */; };
+		CE1539471A73936B00C39BF8 /* MyNaviagtionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */; };
 		CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5447141A3FDFF8006272AD /* NSDate+Extension.m */; };
 		CE61A6031A47F19600355FE1 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A5FF1A47F19600355FE1 /* NSString+Extension.m */; };
 		CE61A6041A47F19600355FE1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A6021A47F19600355FE1 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -69,6 +70,8 @@
 		CE0872FC1A723811008D03FF /* MyTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTransition.m; sourceTree = "<group>"; };
 		CE0873001A72384D008D03FF /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		CE0873011A72384D008D03FF /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		CE1539451A73936B00C39BF8 /* MyNaviagtionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNaviagtionViewController.h; sourceTree = "<group>"; };
+		CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNaviagtionViewController.m; sourceTree = "<group>"; };
 		CE5447131A3FDFF8006272AD /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		CE5447141A3FDFF8006272AD /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
 		CE61A5FE1A47F19600355FE1 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
@@ -182,6 +185,15 @@
 			path = ModalWithAnimation;
 			sourceTree = "<group>";
 		};
+		CE1539441A73934100C39BF8 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				CE1539451A73936B00C39BF8 /* MyNaviagtionViewController.h */,
+				CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
 		CE61A5FD1A47F14F00355FE1 /* Regex */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +234,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CE1539441A73934100C39BF8 /* Navigator */,
 				CE0872F61A723811008D03FF /* ModalWithAnimation */,
 				CE61A5FD1A47F14F00355FE1 /* Regex */,
 				CEE426AE1A442D0B0066DA35 /* NSString+Emoji.h */,
@@ -473,6 +486,7 @@
 				CEEC7D9A1A3C275400BBAE92 /* NSString+Extension.m in Sources */,
 				CEEC7DA81A3C275400BBAE92 /* UIView+frame.m in Sources */,
 				CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */,
+				CE1539471A73936B00C39BF8 /* MyNaviagtionViewController.m in Sources */,
 				CE0872FD1A723811008D03FF /* MyAnimationTransitioning.m in Sources */,
 				CEEC7D991A3C275400BBAE92 /* MBProgressHUD.m in Sources */,
 				CE61A6031A47F19600355FE1 /* NSString+Extension.m in Sources */,
