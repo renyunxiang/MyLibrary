@@ -30,7 +30,9 @@
     vc.transitioningDelegate = [MyTransition sharedMyTransition];
 
     
-#warning 如果控制器是在sb里面 可以通过sb加载控制器 然后再设置属性
+#warning 1 如果控制器是在sb里面 可以通过sb加载控制器 然后再设置属性
+#warning 2 如果是想拖线的话选择 presntal modally 就行了
+    
 }
 
 @end
