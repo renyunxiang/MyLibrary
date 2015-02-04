@@ -12,7 +12,30 @@
 		CE0872FF1A723811008D03FF /* MyTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0872FC1A723811008D03FF /* MyTransition.m */; };
 		CE0873021A72384D008D03FF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0873011A72384D008D03FF /* TestViewController.m */; };
 		CE1539471A73936B00C39BF8 /* MyNaviagtionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */; };
+		CE3F92F91A820B040026F36A /* OOMapPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F92F61A820B040026F36A /* OOMapPinView.m */; };
+		CE3F92FA1A820B040026F36A /* OOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F92F81A820B040026F36A /* OOMapViewController.m */; };
+		CE3F92FF1A820B340026F36A /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE3F92FC1A820B340026F36A /* AMap.bundle */; };
+		CE3F93001A820B340026F36A /* AMapSearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F92FD1A820B340026F36A /* AMapSearchKit.framework */; };
+		CE3F93011A820B340026F36A /* MAMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE3F92FE1A820B340026F36A /* MAMapKit.framework */; };
 		CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5447141A3FDFF8006272AD /* NSDate+Extension.m */; };
+		CE5DBFC41A81C0EA0028FE1F /* current-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFC11A81C0EA0028FE1F /* current-pin.png */; };
+		CE5DBFC51A81C0EA0028FE1F /* current-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFC21A81C0EA0028FE1F /* current-pin@2x.png */; };
+		CE5DBFC61A81C0EA0028FE1F /* current-pin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFC31A81C0EA0028FE1F /* current-pin@3x.png */; };
+		CE5DBFCA1A81C0F20028FE1F /* current-shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFC71A81C0F20028FE1F /* current-shadow.png */; };
+		CE5DBFCB1A81C0F20028FE1F /* current-shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFC81A81C0F20028FE1F /* current-shadow@2x.png */; };
+		CE5DBFCC1A81C0F20028FE1F /* current-shadow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFC91A81C0F20028FE1F /* current-shadow@3x.png */; };
+		CE5DBFD01A81C0F90028FE1F /* current.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFCD1A81C0F90028FE1F /* current.png */; };
+		CE5DBFD11A81C0F90028FE1F /* current@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFCE1A81C0F90028FE1F /* current@2x.png */; };
+		CE5DBFD21A81C0F90028FE1F /* current@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFCF1A81C0F90028FE1F /* current@3x.png */; };
+		CE5DBFD61A81C1000028FE1F /* move-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFD31A81C1000028FE1F /* move-pin.png */; };
+		CE5DBFD71A81C1000028FE1F /* move-pin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFD41A81C1000028FE1F /* move-pin@2x.png */; };
+		CE5DBFD81A81C1000028FE1F /* move-pin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFD51A81C1000028FE1F /* move-pin@3x.png */; };
+		CE5DBFDC1A81C1070028FE1F /* ok.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFD91A81C1070028FE1F /* ok.png */; };
+		CE5DBFDD1A81C1070028FE1F /* ok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFDA1A81C1070028FE1F /* ok@2x.png */; };
+		CE5DBFDE1A81C1070028FE1F /* ok@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFDB1A81C1070028FE1F /* ok@3x.png */; };
+		CE5DBFE21A81C10E0028FE1F /* show-current.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFDF1A81C10E0028FE1F /* show-current.png */; };
+		CE5DBFE31A81C10E0028FE1F /* show-current@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFE01A81C10E0028FE1F /* show-current@2x.png */; };
+		CE5DBFE41A81C10E0028FE1F /* show-current@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5DBFE11A81C10E0028FE1F /* show-current@3x.png */; };
 		CE61A6031A47F19600355FE1 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A5FF1A47F19600355FE1 /* NSString+Extension.m */; };
 		CE61A6041A47F19600355FE1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A6021A47F19600355FE1 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6575181A3E82A400013FA4 /* CaculFontSize.m */; };
@@ -72,8 +95,33 @@
 		CE0873011A72384D008D03FF /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		CE1539451A73936B00C39BF8 /* MyNaviagtionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNaviagtionViewController.h; sourceTree = "<group>"; };
 		CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNaviagtionViewController.m; sourceTree = "<group>"; };
+		CE3F92F51A820B040026F36A /* OOMapPinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMapPinView.h; sourceTree = "<group>"; };
+		CE3F92F61A820B040026F36A /* OOMapPinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMapPinView.m; sourceTree = "<group>"; };
+		CE3F92F71A820B040026F36A /* OOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMapViewController.h; sourceTree = "<group>"; };
+		CE3F92F81A820B040026F36A /* OOMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMapViewController.m; sourceTree = "<group>"; };
+		CE3F92FC1A820B340026F36A /* AMap.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AMap.bundle; sourceTree = "<group>"; };
+		CE3F92FD1A820B340026F36A /* AMapSearchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AMapSearchKit.framework; sourceTree = "<group>"; };
+		CE3F92FE1A820B340026F36A /* MAMapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAMapKit.framework; sourceTree = "<group>"; };
 		CE5447131A3FDFF8006272AD /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
 		CE5447141A3FDFF8006272AD /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		CE5DBFC11A81C0EA0028FE1F /* current-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current-pin.png"; sourceTree = "<group>"; };
+		CE5DBFC21A81C0EA0028FE1F /* current-pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current-pin@2x.png"; sourceTree = "<group>"; };
+		CE5DBFC31A81C0EA0028FE1F /* current-pin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current-pin@3x.png"; sourceTree = "<group>"; };
+		CE5DBFC71A81C0F20028FE1F /* current-shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current-shadow.png"; sourceTree = "<group>"; };
+		CE5DBFC81A81C0F20028FE1F /* current-shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current-shadow@2x.png"; sourceTree = "<group>"; };
+		CE5DBFC91A81C0F20028FE1F /* current-shadow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current-shadow@3x.png"; sourceTree = "<group>"; };
+		CE5DBFCD1A81C0F90028FE1F /* current.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = current.png; sourceTree = "<group>"; };
+		CE5DBFCE1A81C0F90028FE1F /* current@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current@2x.png"; sourceTree = "<group>"; };
+		CE5DBFCF1A81C0F90028FE1F /* current@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "current@3x.png"; sourceTree = "<group>"; };
+		CE5DBFD31A81C1000028FE1F /* move-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "move-pin.png"; sourceTree = "<group>"; };
+		CE5DBFD41A81C1000028FE1F /* move-pin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "move-pin@2x.png"; sourceTree = "<group>"; };
+		CE5DBFD51A81C1000028FE1F /* move-pin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "move-pin@3x.png"; sourceTree = "<group>"; };
+		CE5DBFD91A81C1070028FE1F /* ok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok.png; sourceTree = "<group>"; };
+		CE5DBFDA1A81C1070028FE1F /* ok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok@2x.png"; sourceTree = "<group>"; };
+		CE5DBFDB1A81C1070028FE1F /* ok@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ok@3x.png"; sourceTree = "<group>"; };
+		CE5DBFDF1A81C10E0028FE1F /* show-current.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show-current.png"; sourceTree = "<group>"; };
+		CE5DBFE01A81C10E0028FE1F /* show-current@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show-current@2x.png"; sourceTree = "<group>"; };
+		CE5DBFE11A81C10E0028FE1F /* show-current@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "show-current@3x.png"; sourceTree = "<group>"; };
 		CE61A5FE1A47F19600355FE1 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		CE61A5FF1A47F19600355FE1 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		CE61A6011A47F19600355FE1 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
@@ -157,6 +205,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3F93011A820B340026F36A /* MAMapKit.framework in Frameworks */,
+				CE3F93001A820B340026F36A /* AMapSearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +242,54 @@
 				CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		CE3F92FB1A820B340026F36A /* map */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F92FC1A820B340026F36A /* AMap.bundle */,
+				CE3F92FD1A820B340026F36A /* AMapSearchKit.framework */,
+				CE3F92FE1A820B340026F36A /* MAMapKit.framework */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		CE5DBFBF1A81C0750028FE1F /* 高德地图定位 */ = {
+			isa = PBXGroup;
+			children = (
+				CE3F92FB1A820B340026F36A /* map */,
+				CE3F92F51A820B040026F36A /* OOMapPinView.h */,
+				CE3F92F61A820B040026F36A /* OOMapPinView.m */,
+				CE3F92F71A820B040026F36A /* OOMapViewController.h */,
+				CE3F92F81A820B040026F36A /* OOMapViewController.m */,
+				CE5DBFC01A81C0B20028FE1F /* imageResources */,
+			);
+			path = "高德地图定位";
+			sourceTree = "<group>";
+		};
+		CE5DBFC01A81C0B20028FE1F /* imageResources */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DBFDF1A81C10E0028FE1F /* show-current.png */,
+				CE5DBFE01A81C10E0028FE1F /* show-current@2x.png */,
+				CE5DBFE11A81C10E0028FE1F /* show-current@3x.png */,
+				CE5DBFD91A81C1070028FE1F /* ok.png */,
+				CE5DBFDA1A81C1070028FE1F /* ok@2x.png */,
+				CE5DBFDB1A81C1070028FE1F /* ok@3x.png */,
+				CE5DBFD31A81C1000028FE1F /* move-pin.png */,
+				CE5DBFD41A81C1000028FE1F /* move-pin@2x.png */,
+				CE5DBFD51A81C1000028FE1F /* move-pin@3x.png */,
+				CE5DBFCD1A81C0F90028FE1F /* current.png */,
+				CE5DBFCE1A81C0F90028FE1F /* current@2x.png */,
+				CE5DBFCF1A81C0F90028FE1F /* current@3x.png */,
+				CE5DBFC71A81C0F20028FE1F /* current-shadow.png */,
+				CE5DBFC81A81C0F20028FE1F /* current-shadow@2x.png */,
+				CE5DBFC91A81C0F20028FE1F /* current-shadow@3x.png */,
+				CE5DBFC11A81C0EA0028FE1F /* current-pin.png */,
+				CE5DBFC21A81C0EA0028FE1F /* current-pin@2x.png */,
+				CE5DBFC31A81C0EA0028FE1F /* current-pin@3x.png */,
+			);
+			path = imageResources;
 			sourceTree = "<group>";
 		};
 		CE61A5FD1A47F14F00355FE1 /* Regex */ = {
@@ -234,6 +332,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CE5DBFBF1A81C0750028FE1F /* 高德地图定位 */,
 				CE1539441A73934100C39BF8 /* Navigator */,
 				CE0872F61A723811008D03FF /* ModalWithAnimation */,
 				CE61A5FD1A47F14F00355FE1 /* Regex */,
@@ -432,9 +531,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5DBFC41A81C0EA0028FE1F /* current-pin.png in Resources */,
 				CEEC7D471A3C271B00BBAE92 /* Main.storyboard in Resources */,
+				CE5DBFCB1A81C0F20028FE1F /* current-shadow@2x.png in Resources */,
+				CE5DBFD71A81C1000028FE1F /* move-pin@2x.png in Resources */,
+				CE5DBFE21A81C10E0028FE1F /* show-current.png in Resources */,
+				CE5DBFC51A81C0EA0028FE1F /* current-pin@2x.png in Resources */,
+				CE5DBFCA1A81C0F20028FE1F /* current-shadow.png in Resources */,
+				CE5DBFD21A81C0F90028FE1F /* current@3x.png in Resources */,
+				CE5DBFE41A81C10E0028FE1F /* show-current@3x.png in Resources */,
+				CE5DBFD01A81C0F90028FE1F /* current.png in Resources */,
+				CE5DBFD81A81C1000028FE1F /* move-pin@3x.png in Resources */,
+				CE3F92FF1A820B340026F36A /* AMap.bundle in Resources */,
+				CE5DBFDC1A81C1070028FE1F /* ok.png in Resources */,
+				CE5DBFD11A81C0F90028FE1F /* current@2x.png in Resources */,
 				CEEC7D981A3C275400BBAE92 /* MBProgressHUD.bundle in Resources */,
+				CE5DBFC61A81C0EA0028FE1F /* current-pin@3x.png in Resources */,
+				CE5DBFD61A81C1000028FE1F /* move-pin.png in Resources */,
+				CE5DBFCC1A81C0F20028FE1F /* current-shadow@3x.png in Resources */,
 				CEEC7D4C1A3C271B00BBAE92 /* LaunchScreen.xib in Resources */,
+				CE5DBFE31A81C10E0028FE1F /* show-current@2x.png in Resources */,
+				CE5DBFDE1A81C1070028FE1F /* ok@3x.png in Resources */,
+				CE5DBFDD1A81C1070028FE1F /* ok@2x.png in Resources */,
 				CEEC7D491A3C271B00BBAE92 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEC7DA61A3C275400BBAE92 /* UIImage+Fit.m in Sources */,
+				CE3F92F91A820B040026F36A /* OOMapPinView.m in Sources */,
 				CE61A6041A47F19600355FE1 /* RegexKitLite.m in Sources */,
 				CEEC7D441A3C271B00BBAE92 /* ViewController.m in Sources */,
 				CEEC7D411A3C271B00BBAE92 /* AppDelegate.m in Sources */,
@@ -473,6 +592,7 @@
 				CEEC7DA41A3C275400BBAE92 /* UIImage+Color.m in Sources */,
 				CEF5F20B1A5392B400356F2C /* CellAnimation.m in Sources */,
 				CEEC7D9E1A3C275400BBAE92 /* JYNetworkTest.m in Sources */,
+				CE3F92FA1A820B040026F36A /* OOMapViewController.m in Sources */,
 				CE0872FF1A723811008D03FF /* MyTransition.m in Sources */,
 				CEEC7D9F1A3C275400BBAE92 /* JYNetworkTool.m in Sources */,
 				CEEC7D3E1A3C271B00BBAE92 /* main.m in Sources */,
@@ -611,6 +731,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyLibrary/高德地图定位/map",
+				);
 				INFOPLIST_FILE = MyLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -621,6 +745,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MyLibrary/高德地图定位/map",
+				);
 				INFOPLIST_FILE = MyLibrary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
