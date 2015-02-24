@@ -17,13 +17,15 @@
 #define kPinWidth 21
 #define kPinHeight 29
 
-
-
 @interface OOMapViewController () <UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate, UISearchDisplayDelegate,MAMapViewDelegate,AMapSearchDelegate> {
     OOMapPinView *_pinView;/**屏幕中心指示器*/
     BOOL _isCurrentPostion;
     BOOL _showDisplayEndPostion;
     BOOL _searchAround;    /**是否在搜索周边*/
+    CLLocationCoordinate2D _resultLocation;
+    NSInteger preSeletedIndex;
+    
+    BOOL _tableViewSelected;
 }
 @property (nonatomic, strong) MAMapView *mapView;/** 高德地图view*/
 @property (nonatomic, strong) AMapSearchAPI *search;/**高德搜索引擎*/
@@ -41,10 +43,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    preSeletedIndex  = -1;
+    
     _showDisplayEndPostion = NO;
     _searchAround = YES;
-
     
+
+    //  去掉UIviewController 内部有scrollview时   边缘延伸属性
+    self.modalPresentationCapturesStatusBarAppearance = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.extendedLayoutIncludesOpaqueBars = NO;
+    //    --------------------------------------------------
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 44)];
     
     self.searchBar.barStyle     = UIBarStyleDefault;
@@ -62,29 +72,32 @@
     
     self.tips = [NSMutableArray array];
     
-
     self.title = @"标注店铺的位置";
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"取消"
                                                                              style:UIBarButtonItemStyleBordered
                                                                             target:self
                                                                             action:@selector(returnAction)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"确定" style:UIBarButtonItemStylePlain target:self action:@selector(okAction)];
-//    初始化mapView的容器
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"确定"
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(getAddress)];
+    //    初始化mapView的容器
     UIView *theMapView = [UIView new];
     theMapView.backgroundColor = [UIColor redColor];
     [self.view addSubview:theMapView];
     theMapView.frame = CGRectMake(0, CGRectGetMaxY(self.searchBar.frame), self.view.bounds.size.width, kMapHeight);
-//    初始化mapView
+    //    初始化mapView
     self.mapView = [[MAMapView alloc] init];
     self.mapView.frame = theMapView.bounds;
     self.mapView.delegate = self;
     [self.mapView setZoomLevel:14.5];
     [theMapView addSubview:self.mapView];
-//    开启定位
+    //    开启定位
     self.mapView.showsUserLocation = YES;
     self.mapView.userTrackingMode = MAUserTrackingModeFollow;
-//    初始屏幕中心指示器
+    //    初始屏幕中心指示器
     _pinView = [[OOMapPinView alloc] initWithFrame:CGRectMake(theMapView.frame.size.width * 0.5 - 11,
                                                               theMapView.frame.size.height * 0.5 - 30, 22, 30)];
     [theMapView addSubview:_pinView];
@@ -100,17 +113,33 @@
     [button addTarget:self
                action:@selector(showUserCurrentPostion)
      forControlEvents:UIControlEventTouchUpInside];
-//    初始化搜索器
+    //    初始化搜索器
     self.search = [[AMapSearchAPI alloc] initWithSearchKey:[MAMapServices sharedServices].apiKey
                                                   Delegate:self];
     self.search.language = AMapSearchLanguage_zh_CN;
     self.search.delegate = self;
-//    初始化周边检索
+    //    初始化周边检索
     self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(theMapView.frame),
-                                                                   self.view.bounds.size.width, self.view.bounds.size.height - CGRectGetMaxY(theMapView.frame) - 64)];
+                                                                   self.view.bounds.size.width, self.view.bounds.size.height - 64 - CGRectGetMaxY(theMapView.frame))];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];
+    
+    if (self.longtitude && self.latitude) {
+        _resultLocation = CLLocationCoordinate2DMake(self.latitude.doubleValue, self.longtitude.doubleValue);
+        [self.mapView setCenterCoordinate:_resultLocation];
+    }
+}
+#warning 监听通知取消息
+
+- (void)getAddress {
+    if (_resultLocation.latitude && _resultLocation.longitude) {
+        NSDictionary *info = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithDouble:_resultLocation.latitude],@"lat",[NSNumber numberWithDouble:_resultLocation.longitude],@"long", nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"OOGETLOCATIONSUCESSNOTIFICATION"
+                                                            object:info];
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 
@@ -119,7 +148,7 @@
 /**
  *  searchDisplayController的建议结果点击事件
  *
- *  @param searchBar <#searchBar description#>
+ *  @param searchBar searchBar description
  */
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     NSString *key = searchBar.text;
@@ -138,8 +167,8 @@
     [self searchGeocodeWithKey:key adcode:adcode];
 }
 /*
-*清除annotation.
-*/
+ *清除annotation.
+ */
 - (void)clear
 {
     [self.mapView removeAnnotations:self.mapView.annotations];
@@ -179,7 +208,7 @@
     [response.geocodes enumerateObjectsUsingBlock:^(AMapGeocode *obj, NSUInteger idx, BOOL *stop) {
         if (idx == 0) {
             _showDisplayEndPostion = YES;
-
+            
             [self.mapView setCenterCoordinate:CLLocationCoordinate2DMake(obj.location.latitude, obj.location.longitude)];
             
             [self poiSearchByAround:CLLocationCoordinate2DMake(obj.location.latitude, obj.location.longitude)];
@@ -232,6 +261,8 @@
  *  @param coordinate <#coordinate description#>
  */
 - (void)poiSearchByAround:(CLLocationCoordinate2D)coordinate {
+    preSeletedIndex = -1;
+    
     AMapPlaceSearchRequest *request = [[AMapPlaceSearchRequest alloc] init];
     
     request.searchType          = AMapSearchType_PlaceAround;
@@ -300,19 +331,6 @@
     [self clearSearch];
 }
 /**
- *  确定操作
- */
-- (void)okAction {
-    if (_didOk) {
-        _didOk(self.mapView.userLocation.coordinate);
-    }
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
-    [self clearMapView];
-    [self clearSearch];
-}
-/**
  *  清理地图
  */
 - (void)clearMapView {
@@ -343,6 +361,11 @@ updatingLocation:(BOOL)updatingLocation {
     if (updatingLocation) {
         //取出当前位置的坐标
         if (!_isCurrentPostion) {
+            if (self.latitude && self.longtitude) {
+                
+            } else {
+                _resultLocation = userLocation.coordinate;
+            }
             
             [self searchCurrentLocation];
             _isCurrentPostion = YES;
@@ -353,15 +376,20 @@ updatingLocation:(BOOL)updatingLocation {
  *  对当前位置进行检索
  */
 - (void)searchCurrentLocation {
-    [self poiSearchByAround:self.mapView.userLocation.coordinate];
+    if (self.latitude && self.longtitude) {
+        [self poiSearchByAround:_resultLocation];
+    } else {
+        [self poiSearchByAround:self.mapView.userLocation.coordinate];
+    }
+    
 }
 /**
  *  自定义大头针
  *
- *  @param mapView    <#mapView description#>
- *  @param annotation <#annotation description#>
+ *  @param mapView    mapView description
+ *  @param annotation annotation description
  *
- *  @return <#return value description#>
+ *  @return
  */
 - (MAAnnotationView *)mapView:(MAMapView *)mapView viewForAnnotation:(id <MAAnnotation>)annotation {
     /* 自定义userLocation对应的annotationView. */
@@ -405,7 +433,6 @@ updatingLocation:(BOOL)updatingLocation {
  */
 
 - (void)mapView:(MAMapView *)mapView regionWillChangeAnimated:(BOOL)animated {
-    _searchAround = YES;
     
 }
 
@@ -415,12 +442,22 @@ updatingLocation:(BOOL)updatingLocation {
  @param animated 是否动画
  */
 - (void)mapView:(MAMapView *)mapView regionDidChangeAnimated:(BOOL)animated {
+    _resultLocation = mapView.centerCoordinate;
     if (_searchAround) {
+        if (preSeletedIndex >= 0) {
+            NSIndexPath *ip = [NSIndexPath indexPathForRow:preSeletedIndex inSection:0];
+            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:ip];
+            UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:99];
+            imageView.hidden = YES;
+        }
+        preSeletedIndex = -1;
         [self poiSearchByAround:mapView.centerCoordinate];
     }
     [self.mapView removeAnnotations:self.mapView.annotations];
-
+    
     [_pinView startAnimation];
+    
+    _searchAround = YES;
 }
 
 
@@ -445,10 +482,30 @@ updatingLocation:(BOOL)updatingLocation {
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == self.tableView) {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"tipCell"];
+        
         if (!cell) {
             cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"tipCell"];
+            UIImageView *okImageView = [[UIImageView alloc] initWithFrame:CGRectMake(self.view.bounds.size.width - 16 - 10, cell.contentView.frame.size.height * 0.5 - 5.5, 16, 11)];
+            okImageView.image = [UIImage imageNamed:@"ok"];
+            okImageView.tag = 99;
+            okImageView.hidden = YES;
+            [cell.contentView addSubview:okImageView];
         }
+        
+        UIImageView *okImageView = (UIImageView *)[cell.contentView viewWithTag:99];
+        
+        
+        if (indexPath.row == preSeletedIndex) {
+            NSLog(@"&&&&&&&&& %ld",(long)preSeletedIndex);
+            okImageView.hidden = NO;
+        } else {
+            okImageView.hidden = YES;
+        }
+        
         AMapPOI *p  = _POIResponse.pois[indexPath.row];
+        
+        
+        
         cell.textLabel.text = p.name;
         cell.detailTextLabel.text = p.address;
         return cell;
@@ -478,17 +535,35 @@ updatingLocation:(BOOL)updatingLocation {
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:99];
+    imageView.hidden = NO;
+    
     _showDisplayEndPostion = YES;
     if (tableView == self.tableView) {
+        
+        if (preSeletedIndex >= 0) {
+            NSIndexPath *ip = [NSIndexPath indexPathForRow:preSeletedIndex inSection:0];
+            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:ip];
+            UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:99];
+            imageView.hidden = YES;
+        }
+        preSeletedIndex = indexPath.row;
+        
         _searchAround = NO;
+        _tableViewSelected = YES;
         [self selectPoiPointAtIndexPath:indexPath];
     } else {
         _searchAround = YES;
         [self selectTipsAtIndexPath:indexPath];
     }
+    
+    
 }
 
 - (void)selectTipsAtIndexPath:(NSIndexPath*)indexPath {
+    
     AMapTip *tip = self.tips[indexPath.row];
     
     [self clearAndSearchGeocodeWithKey:tip.name adcode:tip.adcode];
@@ -496,7 +571,6 @@ updatingLocation:(BOOL)updatingLocation {
     [self.displayController setActive:NO animated:NO];
     
     self.searchBar.placeholder = tip.name;
-    
 }
 
 - (void)selectPoiPointAtIndexPath:(NSIndexPath*)indexPath {
@@ -528,13 +602,13 @@ updatingLocation:(BOOL)updatingLocation {
     annotation.subtitle = poi.address;
     [self.mapView removeAnnotations:self.mapView.annotations];
     [self.mapView addAnnotation:annotation];
-   
+    
 }
 #pragma mark - 暂时以隐藏导航栏的方式 修复display往上少走20的bug
-#if  1
+#if  0
 -(BOOL)prefersStatusBarHidden {
     return YES;
-
+    
 }
 #endif
 

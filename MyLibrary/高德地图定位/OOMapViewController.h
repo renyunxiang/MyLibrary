@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+@interface OOMapViewController : UIViewController
 
-@interface OOMapViewController : UIViewController 
-typedef void (^DIDOk)(CLLocationCoordinate2D coor);
-@property(nonatomic,copy) DIDOk didOk;
+@property (nonatomic, strong) NSNumber *longtitude;
+@property (nonatomic, strong) NSNumber *latitude;
+
 @end
