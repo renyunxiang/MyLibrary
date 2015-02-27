@@ -40,6 +40,7 @@
 		CE61A6041A47F19600355FE1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A6021A47F19600355FE1 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6575181A3E82A400013FA4 /* CaculFontSize.m */; };
 		CE77AC331A51446A00963CA0 /* GUIDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77AC321A51446A00963CA0 /* GUIDTool.m */; };
+		CEE3FA381AA07A8D00653F4B /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE3FA371AA07A8D00653F4B /* NSObject+Runtime.m */; };
 		CEE426B01A442D0B0066DA35 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE426AF1A442D0B0066DA35 /* NSString+Emoji.m */; };
 		CEEC7D3E1A3C271B00BBAE92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D3D1A3C271B00BBAE92 /* main.m */; };
 		CEEC7D411A3C271B00BBAE92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D401A3C271B00BBAE92 /* AppDelegate.m */; };
@@ -130,6 +131,8 @@
 		CE6575181A3E82A400013FA4 /* CaculFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaculFontSize.m; sourceTree = "<group>"; };
 		CE77AC311A51446A00963CA0 /* GUIDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIDTool.h; sourceTree = "<group>"; };
 		CE77AC321A51446A00963CA0 /* GUIDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUIDTool.m; sourceTree = "<group>"; };
+		CEE3FA361AA07A8D00653F4B /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		CEE3FA371AA07A8D00653F4B /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		CEE426AE1A442D0B0066DA35 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		CEE426AF1A442D0B0066DA35 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
 		CEEC7D381A3C271B00BBAE92 /* MyLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -311,6 +314,15 @@
 			path = RegexKitLite;
 			sourceTree = "<group>";
 		};
+		CEE3FA351AA07A7500653F4B /* runtime */ = {
+			isa = PBXGroup;
+			children = (
+				CEE3FA361AA07A8D00653F4B /* NSObject+Runtime.h */,
+				CEE3FA371AA07A8D00653F4B /* NSObject+Runtime.m */,
+			);
+			name = runtime;
+			sourceTree = "<group>";
+		};
 		CEEC7D2F1A3C271B00BBAE92 = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +344,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CEE3FA351AA07A7500653F4B /* runtime */,
 				CE5DBFBF1A81C0750028FE1F /* 高德地图定位 */,
 				CE1539441A73934100C39BF8 /* Navigator */,
 				CE0872F61A723811008D03FF /* ModalWithAnimation */,
@@ -607,6 +620,7 @@
 				CEEC7DA81A3C275400BBAE92 /* UIView+frame.m in Sources */,
 				CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */,
 				CE1539471A73936B00C39BF8 /* MyNaviagtionViewController.m in Sources */,
+				CEE3FA381AA07A8D00653F4B /* NSObject+Runtime.m in Sources */,
 				CE0872FD1A723811008D03FF /* MyAnimationTransitioning.m in Sources */,
 				CEEC7D991A3C275400BBAE92 /* MBProgressHUD.m in Sources */,
 				CE61A6031A47F19600355FE1 /* NSString+Extension.m in Sources */,
