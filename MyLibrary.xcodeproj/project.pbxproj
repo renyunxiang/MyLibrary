@@ -48,6 +48,8 @@
 		CEACB7B91AA16E11009228E8 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7AF1AA16E11009228E8 /* NSObject+MJCoding.m */; };
 		CEACB7BA1AA16E11009228E8 /* NSObject+MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7B11AA16E11009228E8 /* NSObject+MJIvar.m */; };
 		CEACB7BB1AA16E11009228E8 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7B31AA16E11009228E8 /* NSObject+MJKeyValue.m */; };
+		CEACB7BF1AA1B4F2009228E8 /* UITableView+EmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7BE1AA1B4F2009228E8 /* UITableView+EmptyView.m */; };
+		CEACB7C21AA1B6F7009228E8 /* TableViewEmptyTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7C11AA1B6F7009228E8 /* TableViewEmptyTool.m */; };
 		CEE3FA381AA07A8D00653F4B /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE3FA371AA07A8D00653F4B /* NSObject+Runtime.m */; };
 		CEE426B01A442D0B0066DA35 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE426AF1A442D0B0066DA35 /* NSString+Emoji.m */; };
 		CEEC7D3E1A3C271B00BBAE92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D3D1A3C271B00BBAE92 /* main.m */; };
@@ -156,6 +158,10 @@
 		CEACB7B11AA16E11009228E8 /* NSObject+MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJIvar.m"; sourceTree = "<group>"; };
 		CEACB7B21AA16E11009228E8 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
 		CEACB7B31AA16E11009228E8 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		CEACB7BD1AA1B4F2009228E8 /* UITableView+EmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+EmptyView.h"; sourceTree = "<group>"; };
+		CEACB7BE1AA1B4F2009228E8 /* UITableView+EmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+EmptyView.m"; sourceTree = "<group>"; };
+		CEACB7C01AA1B6F7009228E8 /* TableViewEmptyTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewEmptyTool.h; sourceTree = "<group>"; };
+		CEACB7C11AA1B6F7009228E8 /* TableViewEmptyTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewEmptyTool.m; sourceTree = "<group>"; };
 		CEE3FA361AA07A8D00653F4B /* NSObject+Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
 		CEE3FA371AA07A8D00653F4B /* NSObject+Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
 		CEE426AE1A442D0B0066DA35 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
@@ -363,6 +369,17 @@
 			path = MJExtension;
 			sourceTree = "<group>";
 		};
+		CEACB7BC1AA1B481009228E8 /* TableViewNoDataAleartView */ = {
+			isa = PBXGroup;
+			children = (
+				CEACB7BD1AA1B4F2009228E8 /* UITableView+EmptyView.h */,
+				CEACB7BE1AA1B4F2009228E8 /* UITableView+EmptyView.m */,
+				CEACB7C01AA1B6F7009228E8 /* TableViewEmptyTool.h */,
+				CEACB7C11AA1B6F7009228E8 /* TableViewEmptyTool.m */,
+			);
+			name = TableViewNoDataAleartView;
+			sourceTree = "<group>";
+		};
 		CEE3FA351AA07A7500653F4B /* runtime */ = {
 			isa = PBXGroup;
 			children = (
@@ -394,6 +411,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CEACB7BC1AA1B481009228E8 /* TableViewNoDataAleartView */,
 				CEE3FA351AA07A7500653F4B /* runtime */,
 				CE5DBFBF1A81C0750028FE1F /* 高德地图定位 */,
 				CE1539441A73934100C39BF8 /* Navigator */,
@@ -640,6 +658,7 @@
 				CEEC7D441A3C271B00BBAE92 /* ViewController.m in Sources */,
 				CEEC7D411A3C271B00BBAE92 /* AppDelegate.m in Sources */,
 				CEEC7D961A3C275400BBAE92 /* FullBgView.m in Sources */,
+				CEACB7BF1AA1B4F2009228E8 /* UITableView+EmptyView.m in Sources */,
 				CEEC7DA21A3C275400BBAE92 /* UIImage+capture.m in Sources */,
 				CE0873021A72384D008D03FF /* TestViewController.m in Sources */,
 				CEEC7D9B1A3C275400BBAE92 /* NSString+Hash.m in Sources */,
@@ -662,6 +681,7 @@
 				CEEC7D9E1A3C275400BBAE92 /* JYNetworkTest.m in Sources */,
 				CE3F92FA1A820B040026F36A /* OOMapViewController.m in Sources */,
 				CE0872FF1A723811008D03FF /* MyTransition.m in Sources */,
+				CEACB7C21AA1B6F7009228E8 /* TableViewEmptyTool.m in Sources */,
 				CEEC7D9F1A3C275400BBAE92 /* JYNetworkTool.m in Sources */,
 				CEEC7D3E1A3C271B00BBAE92 /* main.m in Sources */,
 				CEEC7DA91A3C275400BBAE92 /* UIView+Image.m in Sources */,
