@@ -85,6 +85,8 @@
 		CEEC7DA91A3C275400BBAE92 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEC7D931A3C275400BBAE92 /* UIView+Image.m */; };
 		CEF5F20B1A5392B400356F2C /* CellAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5F20A1A5392B400356F2C /* CellAnimation.m */; };
 		CEF5F20F1A539B8000356F2C /* MyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5F20E1A539B8000356F2C /* MyLayout.m */; };
+		CEFC3F111AB674EA006AF22B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEFC3F101AB674EA006AF22B /* Localizable.strings */; };
+		CEFC3F141AB674F1006AF22B /* CLLocation+Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC3F131AB674F1006AF22B /* CLLocation+Strings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -238,6 +240,9 @@
 		CEF5F20C1A5392E100356F2C /* CellAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellAnimation.h; sourceTree = "<group>"; };
 		CEF5F20D1A539B8000356F2C /* MyLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLayout.h; sourceTree = "<group>"; };
 		CEF5F20E1A539B8000356F2C /* MyLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLayout.m; sourceTree = "<group>"; };
+		CEFC3F101AB674EA006AF22B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		CEFC3F121AB674F1006AF22B /* CLLocation+Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Strings.h"; sourceTree = "<group>"; };
+		CEFC3F131AB674F1006AF22B /* CLLocation+Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Strings.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +433,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CEFC3F0F1AB674DA006AF22B /* location */,
 				CE7F74A71AB1748900A89AC6 /* 图片轮播 */,
 				CEACB7BC1AA1B481009228E8 /* TableViewNoDataAleartView */,
 				CEE3FA351AA07A7500653F4B /* runtime */,
@@ -550,6 +556,16 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		CEFC3F0F1AB674DA006AF22B /* location */ = {
+			isa = PBXGroup;
+			children = (
+				CEFC3F121AB674F1006AF22B /* CLLocation+Strings.h */,
+				CEFC3F131AB674F1006AF22B /* CLLocation+Strings.m */,
+				CEFC3F101AB674EA006AF22B /* Localizable.strings */,
+			);
+			name = location;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -643,6 +659,7 @@
 				CE5DBFD81A81C1000028FE1F /* move-pin@3x.png in Resources */,
 				CE3F92FF1A820B340026F36A /* AMap.bundle in Resources */,
 				CE5DBFDC1A81C1070028FE1F /* ok.png in Resources */,
+				CEFC3F111AB674EA006AF22B /* Localizable.strings in Resources */,
 				CE5DBFD11A81C0F90028FE1F /* current@2x.png in Resources */,
 				CEEC7D981A3C275400BBAE92 /* MBProgressHUD.bundle in Resources */,
 				CE5DBFC61A81C0EA0028FE1F /* current-pin@3x.png in Resources */,
@@ -698,6 +715,7 @@
 				CEEC7D971A3C275400BBAE92 /* MBProgressHUD+JY.m in Sources */,
 				CEEC7DA41A3C275400BBAE92 /* UIImage+Color.m in Sources */,
 				CEF5F20B1A5392B400356F2C /* CellAnimation.m in Sources */,
+				CEFC3F141AB674F1006AF22B /* CLLocation+Strings.m in Sources */,
 				CEEC7D9E1A3C275400BBAE92 /* JYNetworkTest.m in Sources */,
 				CE3F92FA1A820B040026F36A /* OOMapViewController.m in Sources */,
 				CE0872FF1A723811008D03FF /* MyTransition.m in Sources */,
