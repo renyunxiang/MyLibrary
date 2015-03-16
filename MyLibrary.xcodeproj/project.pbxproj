@@ -40,6 +40,8 @@
 		CE61A6041A47F19600355FE1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = CE61A6021A47F19600355FE1 /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6575181A3E82A400013FA4 /* CaculFontSize.m */; };
 		CE77AC331A51446A00963CA0 /* GUIDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77AC321A51446A00963CA0 /* GUIDTool.m */; };
+		CE7F74AA1AB1749E00A89AC6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F74A91AB1749E00A89AC6 /* TestViewController.m */; };
+		CE7F74AD1AB174A700A89AC6 /* JYADView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F74AC1AB174A700A89AC6 /* JYADView.m */; };
 		CEACB7B41AA16E11009228E8 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7A41AA16E11009228E8 /* MJConst.m */; };
 		CEACB7B51AA16E11009228E8 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7A71AA16E11009228E8 /* MJFoundation.m */; };
 		CEACB7B61AA16E11009228E8 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7A91AA16E11009228E8 /* MJIvar.m */; };
@@ -141,6 +143,10 @@
 		CE6575181A3E82A400013FA4 /* CaculFontSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaculFontSize.m; sourceTree = "<group>"; };
 		CE77AC311A51446A00963CA0 /* GUIDTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GUIDTool.h; sourceTree = "<group>"; };
 		CE77AC321A51446A00963CA0 /* GUIDTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GUIDTool.m; sourceTree = "<group>"; };
+		CE7F74A81AB1749E00A89AC6 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		CE7F74A91AB1749E00A89AC6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		CE7F74AB1AB174A700A89AC6 /* JYADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYADView.h; sourceTree = "<group>"; };
+		CE7F74AC1AB174A700A89AC6 /* JYADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYADView.m; sourceTree = "<group>"; };
 		CEACB7A31AA16E11009228E8 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
 		CEACB7A41AA16E11009228E8 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
 		CEACB7A51AA16E11009228E8 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -345,6 +351,17 @@
 			path = RegexKitLite;
 			sourceTree = "<group>";
 		};
+		CE7F74A71AB1748900A89AC6 /* 图片轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				CE7F74AB1AB174A700A89AC6 /* JYADView.h */,
+				CE7F74AC1AB174A700A89AC6 /* JYADView.m */,
+				CE7F74A81AB1749E00A89AC6 /* TestViewController.h */,
+				CE7F74A91AB1749E00A89AC6 /* TestViewController.m */,
+			);
+			name = "图片轮播";
+			sourceTree = "<group>";
+		};
 		CEACB7A21AA16E11009228E8 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +428,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CE7F74A71AB1748900A89AC6 /* 图片轮播 */,
 				CEACB7BC1AA1B481009228E8 /* TableViewNoDataAleartView */,
 				CEE3FA351AA07A7500653F4B /* runtime */,
 				CE5DBFBF1A81C0750028FE1F /* 高德地图定位 */,
@@ -664,9 +682,11 @@
 				CEEC7D9B1A3C275400BBAE92 /* NSString+Hash.m in Sources */,
 				CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */,
 				CEEC7DA01A3C275400BBAE92 /* Reachability.m in Sources */,
+				CE7F74AA1AB1749E00A89AC6 /* TestViewController.m in Sources */,
 				CEF5F20F1A539B8000356F2C /* MyLayout.m in Sources */,
 				CEEC7DA11A3C275400BBAE92 /* TextView.m in Sources */,
 				CEE426B01A442D0B0066DA35 /* NSString+Emoji.m in Sources */,
+				CE7F74AD1AB174A700A89AC6 /* JYADView.m in Sources */,
 				CEEC7D9C1A3C275400BBAE92 /* NSString+Password.m in Sources */,
 				CEACB7B81AA16E11009228E8 /* NSObject+JYCloneProperty.m in Sources */,
 				CEACB7BB1AA16E11009228E8 /* NSObject+MJKeyValue.m in Sources */,
