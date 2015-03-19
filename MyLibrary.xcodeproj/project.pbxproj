@@ -87,6 +87,7 @@
 		CEF5F20F1A539B8000356F2C /* MyLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF5F20E1A539B8000356F2C /* MyLayout.m */; };
 		CEFC3F111AB674EA006AF22B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEFC3F101AB674EA006AF22B /* Localizable.strings */; };
 		CEFC3F141AB674F1006AF22B /* CLLocation+Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFC3F131AB674F1006AF22B /* CLLocation+Strings.m */; };
+		CEFF9EF81AB97A95005AFFDA /* JYStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF9EF71AB97A95005AFFDA /* JYStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -243,6 +244,8 @@
 		CEFC3F101AB674EA006AF22B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		CEFC3F121AB674F1006AF22B /* CLLocation+Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+Strings.h"; sourceTree = "<group>"; };
 		CEFC3F131AB674F1006AF22B /* CLLocation+Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+Strings.m"; sourceTree = "<group>"; };
+		CEFF9EF61AB97A95005AFFDA /* JYStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYStorage.h; sourceTree = "<group>"; };
+		CEFF9EF71AB97A95005AFFDA /* JYStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -433,6 +436,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CEFF9EF51AB97A0D005AFFDA /* JYStorage */,
 				CEFC3F0F1AB674DA006AF22B /* location */,
 				CE7F74A71AB1748900A89AC6 /* 图片轮播 */,
 				CEACB7BC1AA1B481009228E8 /* TableViewNoDataAleartView */,
@@ -564,6 +568,15 @@
 				CEFC3F101AB674EA006AF22B /* Localizable.strings */,
 			);
 			name = location;
+			sourceTree = "<group>";
+		};
+		CEFF9EF51AB97A0D005AFFDA /* JYStorage */ = {
+			isa = PBXGroup;
+			children = (
+				CEFF9EF61AB97A95005AFFDA /* JYStorage.h */,
+				CEFF9EF71AB97A95005AFFDA /* JYStorage.m */,
+			);
+			name = JYStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -709,6 +722,7 @@
 				CEACB7BB1AA16E11009228E8 /* NSObject+MJKeyValue.m in Sources */,
 				CEACB7B51AA16E11009228E8 /* MJFoundation.m in Sources */,
 				CEACB7B71AA16E11009228E8 /* MJType.m in Sources */,
+				CEFF9EF81AB97A95005AFFDA /* JYStorage.m in Sources */,
 				CEACB7B91AA16E11009228E8 /* NSObject+MJCoding.m in Sources */,
 				CEEC7D9D1A3C275400BBAE92 /* NSString+QRCode.m in Sources */,
 				CEEC7D941A3C275400BBAE92 /* AudioTool.m in Sources */,
