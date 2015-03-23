@@ -11,7 +11,7 @@
 #import "ELCImagePickerHeader.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MobileCoreServices/MobileCoreServices.h>
-@interface TestSelectMorePhotoViewController ()
+@interface TestSelectMorePhotoViewController ()<ELCImagePickerControllerDelegate,UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 @property(nonatomic,weak)UIImageView *imageView;
 @end
 
