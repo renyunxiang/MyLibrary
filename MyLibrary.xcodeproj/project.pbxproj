@@ -12,6 +12,8 @@
 		CE0872FF1A723811008D03FF /* MyTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0872FC1A723811008D03FF /* MyTransition.m */; };
 		CE0873021A72384D008D03FF /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0873011A72384D008D03FF /* TestViewController.m */; };
 		CE1539471A73936B00C39BF8 /* MyNaviagtionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */; };
+		CE19CC0A1ACBBD510061FFDA /* CrashNoticeDeveloper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19CC091ACBBD510061FFDA /* CrashNoticeDeveloper.m */; };
+		CE19CC0E1ACBBEC10061FFDA /* IgnoreException.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19CC0D1ACBBEC10061FFDA /* IgnoreException.m */; };
 		CE3F92F91A820B040026F36A /* OOMapPinView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F92F61A820B040026F36A /* OOMapPinView.m */; };
 		CE3F92FA1A820B040026F36A /* OOMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE3F92F81A820B040026F36A /* OOMapViewController.m */; };
 		CE3F92FF1A820B340026F36A /* AMap.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE3F92FC1A820B340026F36A /* AMap.bundle */; };
@@ -128,6 +130,10 @@
 		CE0873011A72384D008D03FF /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		CE1539451A73936B00C39BF8 /* MyNaviagtionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNaviagtionViewController.h; sourceTree = "<group>"; };
 		CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNaviagtionViewController.m; sourceTree = "<group>"; };
+		CE19CC081ACBBD510061FFDA /* CrashNoticeDeveloper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashNoticeDeveloper.h; sourceTree = "<group>"; };
+		CE19CC091ACBBD510061FFDA /* CrashNoticeDeveloper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashNoticeDeveloper.m; sourceTree = "<group>"; };
+		CE19CC0C1ACBBEC10061FFDA /* IgnoreException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IgnoreException.h; sourceTree = "<group>"; };
+		CE19CC0D1ACBBEC10061FFDA /* IgnoreException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IgnoreException.m; sourceTree = "<group>"; };
 		CE3F92F51A820B040026F36A /* OOMapPinView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMapPinView.h; sourceTree = "<group>"; };
 		CE3F92F61A820B040026F36A /* OOMapPinView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OOMapPinView.m; sourceTree = "<group>"; };
 		CE3F92F71A820B040026F36A /* OOMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OOMapViewController.h; sourceTree = "<group>"; };
@@ -340,6 +346,25 @@
 				CE1539461A73936B00C39BF8 /* MyNaviagtionViewController.m */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		CE19CC071ACBBD000061FFDA /* 防止程序crash */ = {
+			isa = PBXGroup;
+			children = (
+				CE19CC0B1ACBBEC10061FFDA /* IgnoreException */,
+				CE19CC081ACBBD510061FFDA /* CrashNoticeDeveloper.h */,
+				CE19CC091ACBBD510061FFDA /* CrashNoticeDeveloper.m */,
+			);
+			name = "防止程序crash";
+			sourceTree = "<group>";
+		};
+		CE19CC0B1ACBBEC10061FFDA /* IgnoreException */ = {
+			isa = PBXGroup;
+			children = (
+				CE19CC0C1ACBBEC10061FFDA /* IgnoreException.h */,
+				CE19CC0D1ACBBEC10061FFDA /* IgnoreException.m */,
+			);
+			path = IgnoreException;
 			sourceTree = "<group>";
 		};
 		CE3F92FB1A820B340026F36A /* map */ = {
@@ -558,6 +583,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CE19CC071ACBBD000061FFDA /* 防止程序crash */,
 				CEE886F11ABAB82D0075E8CC /* 选取多张图片框架 */,
 				CEFF9EF51AB97A0D005AFFDA /* JYStorage */,
 				CEFC3F0F1AB674DA006AF22B /* location */,
@@ -867,6 +893,7 @@
 				CEEC7DA41A3C275400BBAE92 /* UIImage+Color.m in Sources */,
 				CEF5F20B1A5392B400356F2C /* CellAnimation.m in Sources */,
 				CEFC3F141AB674F1006AF22B /* CLLocation+Strings.m in Sources */,
+				CE19CC0E1ACBBEC10061FFDA /* IgnoreException.m in Sources */,
 				CEEC7D9E1A3C275400BBAE92 /* JYNetworkTest.m in Sources */,
 				CE3F92FA1A820B040026F36A /* OOMapViewController.m in Sources */,
 				CE0872FF1A723811008D03FF /* MyTransition.m in Sources */,
@@ -884,6 +911,7 @@
 				CEEC7DA31A3C275400BBAE92 /* UIImage+Clipe.m in Sources */,
 				CEEC7D9A1A3C275400BBAE92 /* NSString+Extension.m in Sources */,
 				CEEC7DA81A3C275400BBAE92 /* UIView+frame.m in Sources */,
+				CE19CC0A1ACBBD510061FFDA /* CrashNoticeDeveloper.m in Sources */,
 				CE5447151A3FDFF8006272AD /* NSDate+Extension.m in Sources */,
 				CEACB7B41AA16E11009228E8 /* MJConst.m in Sources */,
 				CE1539471A73936B00C39BF8 /* MyNaviagtionViewController.m in Sources */,
