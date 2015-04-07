@@ -10,4 +10,7 @@
 #import <UIKit/UIKit.h>
 @interface CrashNoticeDeveloper : NSObject
 UIKIT_EXTERN void UncaughtExceptionHandler(NSException *exception);
+
+//在 didFinish直接调用
+//NSSetUncaughtExceptionHandler (&UncaughtExceptionHandler);
 @end
