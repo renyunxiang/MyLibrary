@@ -44,6 +44,7 @@
 		CE77AC331A51446A00963CA0 /* GUIDTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77AC321A51446A00963CA0 /* GUIDTool.m */; };
 		CE7F74AA1AB1749E00A89AC6 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F74A91AB1749E00A89AC6 /* TestViewController.m */; };
 		CE7F74AD1AB174A700A89AC6 /* JYADView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F74AC1AB174A700A89AC6 /* JYADView.m */; };
+		CE9990981AD61F7800A9B072 /* UINavigationBar+Background.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9990971AD61F7800A9B072 /* UINavigationBar+Background.m */; };
 		CEACB7B41AA16E11009228E8 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7A41AA16E11009228E8 /* MJConst.m */; };
 		CEACB7B51AA16E11009228E8 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7A71AA16E11009228E8 /* MJFoundation.m */; };
 		CEACB7B61AA16E11009228E8 /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACB7A91AA16E11009228E8 /* MJIvar.m */; };
@@ -174,6 +175,8 @@
 		CE7F74A91AB1749E00A89AC6 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		CE7F74AB1AB174A700A89AC6 /* JYADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JYADView.h; sourceTree = "<group>"; };
 		CE7F74AC1AB174A700A89AC6 /* JYADView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JYADView.m; sourceTree = "<group>"; };
+		CE9990961AD61F7800A9B072 /* UINavigationBar+Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+Background.h"; sourceTree = "<group>"; };
+		CE9990971AD61F7800A9B072 /* UINavigationBar+Background.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+Background.m"; sourceTree = "<group>"; };
 		CEACB7A31AA16E11009228E8 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
 		CEACB7A41AA16E11009228E8 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
 		CEACB7A51AA16E11009228E8 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
@@ -449,6 +452,15 @@
 			name = "图片轮播";
 			sourceTree = "<group>";
 		};
+		CE9990951AD61F3A00A9B072 /* 动态修改navigationbar的颜色 */ = {
+			isa = PBXGroup;
+			children = (
+				CE9990961AD61F7800A9B072 /* UINavigationBar+Background.h */,
+				CE9990971AD61F7800A9B072 /* UINavigationBar+Background.m */,
+			);
+			name = "动态修改navigationbar的颜色";
+			sourceTree = "<group>";
+		};
 		CEACB7A21AA16E11009228E8 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -596,6 +608,7 @@
 		CEEC7D3A1A3C271B00BBAE92 /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CE9990951AD61F3A00A9B072 /* 动态修改navigationbar的颜色 */,
 				CE19CC071ACBBD000061FFDA /* 防止程序crash */,
 				CEE886F11ABAB82D0075E8CC /* 选取多张图片框架 */,
 				CEFF9EF51AB97A0D005AFFDA /* JYStorage */,
@@ -880,6 +893,7 @@
 				CEEC7DA21A3C275400BBAE92 /* UIImage+capture.m in Sources */,
 				CE0873021A72384D008D03FF /* TestViewController.m in Sources */,
 				CEEC7D9B1A3C275400BBAE92 /* NSString+Hash.m in Sources */,
+				CE9990981AD61F7800A9B072 /* UINavigationBar+Background.m in Sources */,
 				CE6575191A3E82A400013FA4 /* CaculFontSize.m in Sources */,
 				CEEC7DA01A3C275400BBAE92 /* Reachability.m in Sources */,
 				CE7F74AA1AB1749E00A89AC6 /* TestViewController.m in Sources */,
